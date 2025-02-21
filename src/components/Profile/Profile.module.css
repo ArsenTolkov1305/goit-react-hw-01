@@ -1,48 +1,9 @@
-/* .text {
-    font-size: 18px;
-    letter-spacing: 0.01em;
-    font-family: sans-serif;
-    font-weight: 600;
-    color: white;
-    text-align: center;
-    display: block;
-} */
-
-/* .marcup {
-    width: 19%;
-    background-color: lightgray;
-    border: 2px solid black;
-    border-radius: 8px;
-    padding: 1px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.image {
-    margin-right: auto;
-    margin-left: auto;
-    display: flex;
-    justify-content: center;
-    padding: 5px;
-}
-
-.listyle {
-    list-style: none;
-    border: 1px solid darkgray;
-    background-color: gray;
-    width: 180px;
-    height: 75px;
-}
-
-.list {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    justify-content: center;
-    width: 160px;
-    align-items: center;
-    align-content: center;
-    justify-items: center;
-} */
 
 
 .marcup {
@@ -53,6 +14,8 @@
     text-align: center;
     overflow: hidden;
     border: 1px solid #ccc;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .image {
@@ -67,6 +30,8 @@
 .text {
     margin: 5px 0;
     color: #333;
+    font-size: 16px;
+    color: grey;
 }
 
 .text:first-of-type {
@@ -90,6 +55,10 @@
     text-align: center;
     border-right: 1px solid #ccc;
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 800;
 }
 
 .listyle:last-child {
@@ -97,6 +66,24 @@
 }
 
 .listyle span:last-child {
-    display: block;
+    font-size: 16px;
     font-weight: bold;
+}
+
+.listyle span:first-child {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.listyle span {
+    font-size: 18px;
+    display: block;
+    font-weight: 800;
+
+}
+
+.textbl {
+    color: black;
+    font-weight: 800;
+    font-size: 28px;
 }
