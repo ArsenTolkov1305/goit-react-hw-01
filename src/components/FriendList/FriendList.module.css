@@ -1,0 +1,15 @@
+.oneOfFriends {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.ulListFr {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    gap: 24px;
+}
+
+/* люди знаю дебільні назви класів, але придумати нічого більше я не зміг */

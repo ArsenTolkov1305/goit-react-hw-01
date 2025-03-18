@@ -1,0 +1,20 @@
+.online {
+    color: green;
+}
+.offline {
+    color: red;
+}
+
+.theirNames {
+    color: black;
+}
+.listFriends {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 12%;
+    width: 100px;
+    padding: 16px;
+}

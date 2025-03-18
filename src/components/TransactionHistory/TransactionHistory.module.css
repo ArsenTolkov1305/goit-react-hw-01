@@ -1,0 +1,31 @@
+.transaction-history {
+  width: 300px;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+.thka {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  text-align: center;   
+}
+
+
+.tdka {
+    text-align: center;
+}
+
+.tdka, 
+.thka {
+  border: 1px solid black;
+  padding: 20px;
+  width: 1000px;
+}
+
+.trka {
+    background-color: darkgray;
+}
+
+.trka:nth-child(even) {
+  background-color: #e0e0e0;
+}
