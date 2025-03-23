@@ -1,10 +1,8 @@
 import css from "./TransactionHistory.module.css";
 
-const TransactionHistory = (props) => {
-  const items = props.items;
-
+const TransactionHistory = ({ items }) => {
   return (
-    <table className={css.transaction-history}>
+    <table className={css["transaction-history"]}>
       <thead>
         <tr className={css.trka}>
           <th className={css.thka}>Type</th>
@@ -12,7 +10,7 @@ const TransactionHistory = (props) => {
           <th className={css.thka}>Currency</th>
         </tr>
       </thead>
-          <tbody>
+      <tbody>
         <tr className={css.trka}>
           <td className={css.tdka}>{items[0].type}</td>
           <td className={css.tdka}>{items[0].amount}</td>
@@ -32,7 +30,7 @@ const TransactionHistory = (props) => {
           <td className={css.tdka}>{items[3].type}</td>
           <td className={css.tdka}>{items[3].amount}</td>
           <td className={css.tdka}>{items[3].currency}</td>
-              </tr>
+        </tr>
         <tr className={css.trka}>
           <td className={css.tdka}>{items[4].type}</td>
           <td className={css.tdka}>{items[4].amount}</td>
