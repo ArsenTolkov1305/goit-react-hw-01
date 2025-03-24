@@ -11,36 +11,13 @@ const TransactionHistory = ({ items }) => {
         </tr>
       </thead>
       <tbody>
-        <tr className={css.trka}>
-          <td className={css.tdka}>{items[0].type}</td>
-          <td className={css.tdka}>{items[0].amount}</td>
-          <td className={css.tdka}>{items[0].currency}</td>
-        </tr>
-        <tr className={css.trka}>
-          <td className={css.tdka}>{items[1].type}</td>
-          <td className={css.tdka}>{items[1].amount}</td>
-          <td className={css.tdka}>{items[1].currency}</td>
-        </tr>
-        <tr className={css.trka}>
-          <td className={css.tdka}>{items[2].type}</td>
-          <td className={css.tdka}>{items[2].amount}</td>
-          <td className={css.tdka}>{items[2].currency}</td>
-        </tr>
-        <tr className={css.trka}>
-          <td className={css.tdka}>{items[3].type}</td>
-          <td className={css.tdka}>{items[3].amount}</td>
-          <td className={css.tdka}>{items[3].currency}</td>
-        </tr>
-        <tr className={css.trka}>
-          <td className={css.tdka}>{items[4].type}</td>
-          <td className={css.tdka}>{items[4].amount}</td>
-          <td className={css.tdka}>{items[4].currency}</td>
-        </tr>
-        <tr className={css.trka}>
-          <td className={css.tdka}>{items[5].type}</td>
-          <td className={css.tdka}>{items[5].amount}</td>
-          <td className={css.tdka}>{items[5].currency}</td>
-        </tr>
+        {items.map(({ id, type, amount, currency }) => (
+          <tr key={id} className={css.trka}>
+            <td className={css.tdka}>{type}</td>
+            <td className={css.tdka}>{amount}</td>
+            <td className={css.tdka}>{currency}</td>
+          </tr>
+        ))}
       </tbody>
     </table>
   );
